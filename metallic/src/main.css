@@ -1,0 +1,90 @@
+@font-face {
+	font-family: 'montecarlo';
+	src: url('montecarlo.ttf');}
+
+html, body { height:100%; width:100%;
+	margin:0; padding:0;
+	background:#7C8274;
+	background-size:auto auto;}
+	
+::-moz-selection {	background-color:#000; color:#fff;}
+::selection {	background-color:#000; color:#fff;}
+
+main {	height:375px; width:700px;
+		top:0;bottom:0;left:0;right:0;
+		position:absolute;
+		margin: auto auto auto auto;}
+
+li { font:16px 'montecarlo';
+	margin-left:-25px;
+	line-height:20px;}
+	
+ul {	list-style-type: none;
+	margin-top:109px;
+	background:#404642;
+	border-top: 1px solid black;
+	border-bottom:1px solid black;
+	text-align: center;
+	padding-right:15px;}
+
+a {	text-decoration: none; color:#000; transition: 0.3s;}
+a:hover {	color:#7C8274;}
+	
+h2 { text-align: left;
+	font: italic 21px 'Times New Roman';
+	padding: 2px 0px 2px 10px;
+	background:#000;
+	color:#7C8274;
+	margin-top:100px;}
+
+#quo { width:700px;
+	margin-left:30px;
+	text-align: left;
+	font: italic 21px 'Times New Roman';
+	color: black;}
+	
+.lightning { height:300px; width:150px;
+	border:1px solid black;
+	background-image:url('lightning.png');
+	float:left;
+	margin-left:15px;}
+	
+.lightning ul {	opacity:0; transition: 0.3s;}
+.lightning:hover ul {	opacity:1;}
+
+
+.thunder { height:300px; width:150px;
+	border:1px solid black;
+	background-image:url('thunder.png');
+	float:left;
+	margin-left:20px;}
+
+.thunder ul {	opacity:0; transition: 0.3s;}
+.thunder:hover ul {	opacity:1;}
+
+.rain { height:300px; width:150px;
+	border:1px solid black;
+	background-image:url('rain.png');
+	float:left;
+	margin-left:20px;}
+
+.rain ul {	opacity:0; transition: 0.3s;}
+.rain:hover ul {	opacity:1;}
+
+.storm { height:300px; width:150px;
+	border:1px solid black;
+	background-image:url('storm.png');
+	float:left;
+	margin-left:20px;}
+
+.storm ul {	opacity:0; transition: 0.3s;}
+.storm:hover ul {	opacity:1;}
+
+.searchbar {
+	background: #404642;
+	text-align:center;
+	font: 16px 'montecarlo';
+	width: 320px; height: 22px;
+	border:1px solid black;
+	color: #7C8274;
+	margin:10px auto auto 187px;}
