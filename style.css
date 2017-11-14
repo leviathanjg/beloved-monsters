@@ -1,0 +1,93 @@
+html {	margin:0px; padding:0px;
+box-sizing:border-box;
+background-color:#000;}
+
+@keyframes descend { from {opacity:0;margin-top:-10px;}
+to {opacity:1;margin-top:0px; height:auto;}	}
+
+@keyframes slide { from { opacity:0; margin-top:-10px;} 
+to { margin-top:10px;} }
+
+body {	width:80%;
+background-color:#fff;
+margin:30px auto;
+padding:10px;
+border: 3px double #000;}
+
+p {	margin:0px; padding:0px;}
+
+main img {	display:block;
+margin:0px auto 10px auto;
+max-width:100%;
+animation-name:descend;
+animation-duration:1s;}
+
+main section {	display:block;
+font: 14px "Courier New", monospace;
+max-width:80%;
+text-align:center;
+margin:auto;}
+
+main section a { color:#000;
+text-decoration:none;}
+
+main section a:focus {	text-decoration:underline;}
+main section a:hover {	text-decoration:underline;}
+
+main p { display:block;
+font: 16px "Times New Roman", serif;
+margin:10px auto;
+line-height:1.5;
+max-width:80%;
+text-align:justify;
+font-style:italic;}
+
+details { font-family:'Courier New', monospace;}
+
+details[open] summary ~ ul, aside { animation-name: slide;
+animation-duration:1s;}
+
+details[open] summary ~ section { animation-name:descend; 
+animation-duration:1s;}
+
+details summary { display:block;
+border:3px double #000;
+max-width:50%;
+margin:2px auto;
+font-weight:bold;
+line-height:1.5;
+font-size:14px;
+text-align:center;}
+
+details aside {	font-size:14px;
+text-align:center;
+margin:10px auto; padding:0px;
+font-style:italic;}
+
+details section { line-height:0px;
+text-align:center;
+margin:0px;}
+
+details section img { display:inline-block;
+margin:0px 0px 1px 1px;}
+
+details a { color:#000;
+text-decoration:none;}
+
+details a:focus {text-decoration:underline;}
+details a:hover {text-decoration:underline;}
+
+details h2 { display:block;
+font-size:16px;
+text-align:center;
+padding:0px; margin:10px;}
+
+details ul {	display:block;
+text-align:center;
+max-width:60%;
+list-style:"★ ";
+padding:0px; margin:10px auto;}
+
+details li { font-size:14px;}
+
+@media only screen and (min-width:625px) {	body { width:500px;}	}
